@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="shortcut icon" href="http://www.clker.com/cliparts/m/I/n/1/T/P/orange-dot-md.png" type="image/x-icon">
+    <title>Dots Move</title>
+</head>
+
+<body>
+    <!-- customize dot -->
+    <!-- number -->
+    <div class="option optionDots">
+        <lottie-player class="click" src="https://assets1.lottiefiles.com/datafiles/S8iOn0PKnic5RCO/data.json"
+            background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
+        <label for="number" class="label">Select number dots</label>
+        <input type="number" name="number" class="input" id="number">
+    </div>
+    <!-- size -->
+    <div class="option optionSize">
+        <lottie-player class="click" src="https://assets1.lottiefiles.com/datafiles/S8iOn0PKnic5RCO/data.json"
+            background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
+        <label for="size" class="label">Select size dots</label>
+        <input type="number" name="size" id="size" class="input">
+    </div>
+    <!-- color -->
+    <div class="option optionColor">
+        <!-- <lottie-player class="click" src="https://assets1.lottiefiles.com/datafiles/S8iOn0PKnic5RCO/data.json"
+            background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player> -->
+        <p class="label" style="padding: 10px 0;">Select color dots</p>
+        <br>
+        <div class="selectionColor">
+            <label for="topColor" class="label">Top Color</label>
+            <input type="color" name="topColor" id="topColor" class="inputColor">
+
+            <br>
+
+            <label for="midColor" class="label">Mid Color</label>
+            <input type="color" name="bottomColor" id="midColor" class="inputColor">
+
+            <br>
+
+            <label for="bottomColor" class="label">Bottom Color</label>
+            <input type="color" name="bottomColor" id="bottomColor" class="inputColor">
+        </div>
+
+    </div>
+
+    <!-- show dot  -->
+    <div class="container"></div>
+
+    <!-- animation botom  -->
+    <lottie-player class="lotie" src="https://assets7.lottiefiles.com/packages/lf20_vncbpdr7.json"
+        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+</body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="./process.js"></script>
+
+</html>

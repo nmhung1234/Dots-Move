@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fee8cd;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.label {
+    background-color: transparent;
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.option {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+}
+.optionSize {
+    top: 70px;
+}
+.optionColor {
+    top: 140px;
+}
+.container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.pointer {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image: linear-gradient(#ffc0cb, #ffa500, #ff0000);
+    border-radius: 50%;
+}
+.input {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(252, 204, 142);
+    outline: none;
+    border: none;
+}
+.inputColor{
+    margin: 5px;
+}
+.lotie {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    animation: move 10s linear infinite;
+}
+.click {
+    position: absolute;
+    top: 10%;
+    left: 95%;
+    transform: rotate(-40deg);
+    background-color: transparent;
+}
+@keyframes move {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+}
