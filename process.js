@@ -29,11 +29,17 @@ numberdots.addEventListener('change', (e) => {
     for (let i = 0; i < numd; i++) {
         container.innerHTML += `<div class="pointer"></div>`
     }
+    for (i = 0; i < pointers.length; i++) {
+        pointers[i].style.backgroundImage = `linear-gradient(${topColor.value}, ${midColor.value}, ${bottomColor.value})`;
+    }
 })
 size.addEventListener('change', (e) => {
     let nums = e.target.value;
     if (nums < 5) {
         size.value = 5;
+    }
+    for (i = 0; i < pointers.length; i++) {
+        pointers[i].style.backgroundImage = `linear-gradient(${topColor.value}, ${midColor.value}, ${bottomColor.value})`;
     }
     // console.log(nums);
     container.style.width = `${nums}px`;
