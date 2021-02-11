@@ -26,6 +26,9 @@ body {
 .optionColor {
     top: 140px;
 }
+.selectionColor{
+    background-color: transparent;
+}
 .container {
     position: relative;
     height: 100px;
